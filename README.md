@@ -427,7 +427,7 @@ Then add the song to `adele`:
 Whoa! Check it out - we did not explicitly save `set_fire_to_the_rain`, but just
 by pushing the instance into `adele.songs`, Active Record has gone ahead and
 saved the instance. Not only that, notice that the song instance _also has an
-aritst_id!_
+artist_id!_
 
 ```bash
 [8] pry(main)> set_fire_to_the_rain.artist
@@ -482,9 +482,9 @@ This time, we'll just use `create` directly, which would be the same as running
 
 ```bash
 [14] pry(main)> pop.songs << rolling_in_the_deep
-=> [#<Song:0x007fc75bb4d1e0 id: 4, name: "Rolling in the Deep", artist_id: 1, genre_id: 1>]
+=> [ #<Song:0x007fc75bb4d1e0 id: 4, name: "Rolling in the Deep", artist_id: 1, genre_id: 1>]
 [15] pry(main)> pop.songs
-=> [#<Song:0x007fc75bb4d1e0 id: 4, name: "Rolling in the Deep", artist_id: 1, genre_id: 1>]
+=> [ #<Song:0x007fc75bb4d1e0 id: 4, name: "Rolling in the Deep", artist_id: 1, genre_id: 1>]
 [16] pry(main)> rolling_in_the_deep.genre
 => #<Genre:0x007fa34338d270 id: 1, name: "pop">
 ```
